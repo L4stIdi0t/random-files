@@ -10,8 +10,8 @@ const rndInt = randomIntFromInterval(65, 99)
 let per = 0;
 function progressLoad() {
   if (per >= rndInt) {
-    progress.style.width = `80%`;
-    percentage.innerHTML = "80%";
+    progress.style.width = `${rndInt}%`;
+    percentage.innerHTML = `${rndInt}%`;
   } else {
     progress.style.width = `${per}%`;
     percentage.innerHTML = `${per}%`;
